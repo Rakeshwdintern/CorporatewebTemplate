@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Site</title>
+    <script src="https://kit.fontawesome.com/233f8b991d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    .main-container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .header{
+        background-color: dodgerblue;
+        width: 100%;
+    }
+    .pre-header{
+        background-color: transparent;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .pre-header-col-1{
+         width: 40%; 
+        padding: 0 40px;
+      
+        display: flex;
+        justify-content:flex-start; 
+        
+        
+    }
+    .phnum-small{
+        padding: 0 5px;
+    }
+    .sm-phone-icon{
+        color: white;
+        margin: 10px 0 10px 5px;
+        font-size:small;
+    }
+    .phnum-txt-sm{
+        text-decoration: none;
+        color: white;
+        font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 24px;
+    }
+    .preheader-col-2{
+        width: 60%;
+        padding: 0 5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+.banner{
+    position: relative;
+    margin: 0;
+    padding: 5% 0;
+width: 100%;
+background-color:#3d5afe;
+text-align: center;
+
+}
+.headline-l{
+    margin: 2% 25%;
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 62px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sub-txt-md{
+    margin :15px 20%;
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Hind Siliguri';
+}
+.ellipse-btn-md{
+    margin: 1% 0;
+    border-radius: 50px;
+    box-shadow: 0px -2px 1px 3px #3258d4;
+    border :none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.8% 3%;
+    font-size: medium;
+    background-color: rgba(255,255,255,1);
+    color: rgba(34,147,215,1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* margin-bottom: 5%;     */
+}
+.ellipse-btn-md a{
+    text-decoration: none;
+}
+
+.info-sec-1{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+.info-sec-1-1{
+    /* width: 100%; */
+    
+    
+}
+.headline-md{
+    color: darkslategrey;
+    text-align: center;
+    margin: 2% 0;
+    font-size: 40px;
+    font-family: "Hind"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.text-sm-darkgrey{
+    color: darkgrey;
+    font-size: large;
+    text-align: center;
+    margin: 1% 20%;
+
+}
+.info-card-grids{
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    
+}
+.info-sec-1-card-text{
+    padding-right:5%;
+    color: grey;
+}
+.info-sec-1-card-img{
+    padding: 1%;
+    margin-right: 2%;
+    background-color: #3d5afe;
+    border-radius: 100px;
+    height: fit-content;
+}
+.info-sec-2-two-col{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding: 4%;
+    grid-gap: 10%;
+}
+.sub-cols{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5%;
+}
+.ellipse-btn-sm-blue{
+    border-radius: 30px;
+    padding: 1.9% 10%;
+    background-color: #3258d4;
+    color: white;
+    border: none;
+    box-shadow: 0 0 #3258d4;
+    margin: 5% 1%;
+    font-family: 'Hind Siliguri';
+    font-size: small;
+    font-weight: 500;
+}
+.col-1-headline-md{
+    color: darkslategrey;
+    text-align: left;
+    margin: 2% 0;
+    font-size: 40px;
+    font-family: "Hind"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.info-sec-3{
+    background-color: #3258d4;
+}
+.white{
+    color: white;
+}
+</style>
+</head>
+<body>
+    <div class="main-container">
+    <div class = "header">
+ <div class="pre-header">
+     <div class="pre-header-col-1">
+        <div class="phnum-small"><i class ="fas fa-phone sm-phone-icon"></i><span><a class="phnum-txt-sm" href="#">
+            123-456-7890
+        </a></span> </div>
+        <div class="email-small"><i class="fas fa-envelope sm-phone-icon"></i>
+        <a class="phnum-txt-sm" href ="#">support@exponentthemes.com</a></div>
+     </div>
+     <div class="pre-header-col-2">
+         
+    </div> 
+ </div></div>
+ <div class="banner">
+     <h1 class="headline-l">The future is changing and we are a part of it</h1>
+     <p class="sub-txt-md">Exponent is a pixel perfect theme, that is tailor made for startups 
+      and businesses. Build your website swiftly and easily.</p>
+     <button class="ellipse-btn-md"><a href="#">Learn more</a></button>
+     
+ </div>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#3d5afe" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,58.7C480,32,600,32,720,48C840,64,960,96,1080,90.7C1200,85,1320,43,1380,21.3L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>  
+    <div class="info-sec-1">
+        <h2 class="headline-md">A.I. for Business</h2>
+        <p class="text-sm-darkgrey">Some of the reasons include precise construction and critical handiling of any type of large data</p>
+<div class="info-sec-1-1">
+<div class="info-card-grids">
+<div class="info-sec-1-card-img"><i class="fas fa-globe"></i></div>
+<div class="info-sec-1-card-text">
+    <span class="heading-xs">Global Communication</span>
+    <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p>
+</div>
+
+
+    <div class="info-sec-1-card-img"><i class="fas fa-clock"></i></div>
+<div class="info-sec-1-card-text"><span class="heading-xs">Global Communication</span>
+    <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p></div>
+
+
+    <div class="info-sec-1-card-img"><i class="fas fa-key"></i></div>
+<div class="info-sec-1-card-text"><span class="heading-xs">Global Communication</span>
+    <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p></div>
+
+
+</div>
+</div>
+</div>
+<div class="info-sec-2-two-col">
+<div class="col1"> 
+    <h2 class="col-1-headline-md">Scale your business using our technology</h2>
+    <p class="">Exponent WordPress theme is insanely flexible and amazingly easy to use.
+ This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. </p>
+ <div class="sub-cols">
+     <div class="sub-col-1">
+         <i class="fab fa-ubuntu"></i>
+         <h3 class="headline-sm">Cutting Edge</h3>
+         <p class="sub-txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p>
+     </div>
+     <div class="sub-col-2"> <i class="fab fa-ubuntu"></i>
+        <h3 class="headline-sm">Futuristic</h3>
+        <p class="sub-txt-sm">Over 30 professionally designed pre-built website concepts to choose from.</p></div>
+ </div>
+ <button class="ellipse-btn-sm-blue">ABOUT US</button>
+</div>
+<div class="col2">
+    <img src="drone.jpg" alt="" width="100%">
+</div>
+</div>
+<!-- <div class="info-sec-3">
+    <h2 class="headline-md white">How our A.I works on your applications</h2>
+</div> -->
+</div>
+</body>
+</html>
