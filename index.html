@@ -11,6 +11,9 @@
         margin: 0;
         padding: 0;
     }
+    a{
+        text-decoration: none;
+    }
     .main-container{
         padding: 0;
         margin: 0;
@@ -89,6 +92,10 @@ text-align: center;
     font-family: 'Hind Siliguri';
     font-weight: 500;
 }
+.mrg-pdd-0{
+    margin: 0;
+    padding: 0;
+}
 .ellipse-btn-md{
     margin: 1% 0;
     border-radius: 50px;
@@ -162,7 +169,7 @@ text-align: center;
     margin-top: 50px;
     display: grid;
     grid-template-columns: auto auto;
-    padding: 4%;
+    padding: 8%;
     grid-gap: 4%;
 }
 .sub-cols{
@@ -247,13 +254,23 @@ text-align: center;
 .reviewcard{
     DISPLAY: grid;
     grid-template-columns: auto auto;
-    box-shadow: 1px 1px 2px 2px #00000029;
+    box-shadow: 0px 0px 16px 2px #00000029;
      padding-left:3%; 
 }
 .reviewtext{
     line-height: 1.6;
 }
-
+.grey{
+    color: darkgray;
+}
+.news-images{
+    width: 100%;
+}
+.newsfeed a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 600;
+}
 </style>
 </head>
 <body>
@@ -278,7 +295,7 @@ text-align: center;
      <button class="ellipse-btn-md"><a href="#">Learn more</a></button>
      
  </div>
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#3d5afe" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,58.7C480,32,600,32,720,48C840,64,960,96,1080,90.7C1200,85,1320,43,1380,21.3L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>  
+ 
     <div class="info-sec-1">
         <h2 class="headline-md">A.I. for Business</h2>
         <p class="text-sm-darkgrey">Some of the reasons include precise construction and critical handiling of any type of large data</p>
@@ -326,6 +343,7 @@ text-align: center;
 </div>
 </div>
 <div class="tworow-threecols">
+    
     <center>
         <h2 class="headline-md white">How our AI  work on your applications</h2>
         <p class="sub-txt-md white">The best part of being a part of this community is about working together.</p>
@@ -340,6 +358,7 @@ text-align: center;
         </div>
 
     </center>
+    
 </div>
 <div class="bigcols2">
     <div class="col1"><img src="analytics.JPG" alt="" srcset=""></div>
@@ -412,6 +431,29 @@ text-align: center;
 
     </div>
 
+</div>
+<div class="tworow-threecols bg-custom">
+    <center>
+        <h2 class="headline-md black">News & Announcements</h2>
+        <p class="sub-txt-md grey">We specialize in a wide array of medical fields and have some of the best facilities and doctors to take care of you.</p>
+        <div class="cels3">
+            <div class="newsfeed">
+                <img class="news-images"src="nt.jpg" alt="" srcset="">
+                <p class="txt-xs">NEWS, TECH</p>
+                <div class="sub-txt-md"><a href="#">By 2030 Every Person on this planet will have a smartphone</a></div>
+                <p class="txt-xs grey">01 AUG 2018</p>
+            </div>
+            <div class="newsfeed"><img class="news-images" src="mt.jpg" alt="" srcset="">
+                <p class="txt-xs">MISC, TECH</p>
+                <div class="sub-txt-md"><a href="#">Why you should hire a lawyer to prepare your prvacy policy</a></div>
+                <p class="txt-xs grey">01 AUG 2018</p></div>
+            <div class="newsfeed"><img class="news-images" src="lt.jpg" alt="" srcset="">
+                <p class="txt-xs">LIFESTYLE, TECH</p>
+                <div class="sub-txt-md"><a href="#">Four places to visit if you are a nature lover</a></div>
+                <p class="txt-xs grey">01 AUG 2018</p></div>
+
+        </div>
+    </center>
 </div>
 </div>
 </body>
