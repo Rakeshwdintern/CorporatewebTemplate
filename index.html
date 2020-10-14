@@ -94,7 +94,10 @@ text-align: center;
 }
 .mrg-pdd-0{
     margin: 0;
-    padding: 0;
+    padding: 5% auto;
+}
+.mrg-0{
+    margin: 0;
 }
 .ellipse-btn-md{
     margin: 1% 0;
@@ -120,11 +123,7 @@ text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
 }
-.info-sec-1-1{
-    /* width: 100%; */
-    
-    
-}
+
 .headline-md{
     color: darkslategrey;
     text-align: center;
@@ -270,6 +269,48 @@ text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.671);
     font-weight: 600;
+}
+.onerow{
+    background-color:#3d5afe;
+    /* padding: 2% 20%; */
+    text-align: center;
+}
+.bg-white{
+    background-color: white;
+}
+.center{
+    text-align: center  ;
+}
+.row{
+    max-width: 100%;
+    margin: 2% 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+    
+
+}
+.column{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.text-sec{
+    margin: 5%
+}
+.col-head{
+    margin: 0 5%;
+}
+.btm-brdr-grey{
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+}
+.five-cols{
+    display: grid;
+    max-width: 100%;
+    margin: 0 5%;
+    grid-template-columns: repeat(5,1fr);
 }
 </style>
 </head>
@@ -454,6 +495,63 @@ text-align: center;
 
         </div>
     </center>
+</div>
+<div class="onerow">
+    <span><p class="white">INNOVATION STARTS HERE</p></span>
+    <h1 class="headline-md white"> We are powering more than 233,000 Applications, and we’re just getting started</h1>
+    <button class="ellipse-btn-md"> SIGN UP NOW</button>
+</div>
+<div class="tworow-threecols bg-white btm-brdr-grey">
+    <div class="bg-white">
+        <h1 class="headline-md black mrg-0">Get Answers</h1>
+        <p class="sub-txt-md black center">Professional support answers 
+            by trained answering machine with advanced alien technology to answer all your questions</p>
+    
+    
+    </div>
+    <div class="row">
+        <div class="column bg-custom"><i class="far fa-comment"></i> <div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
+        <div class="column bg-custom"><i class="fas fa-thumbs-up"></i><div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
+        <div class="column bg-custom"><i class="fas fa-microphone"></i> <div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
+    
+    </div>
+</div>
+<div class="five-cols footer">
+    <div class="col1"><h2 class="col-1-headline-md black">Exponent</h2>
+    <p class="sub-txt-md gray"> Get started swiftly & easily by importing a demo
+         of your choice in a single click. Build your website using a fully visual interface.</p></div>
+    <div class="col2"><p class="sub-txt-md">Contact</p>
+    <ul>
+       <li>+1800-123-4567</li>
+       <li>help@brandexponents.com</li>
+       <li>Express Chambers II Spaces Works, Level 5, Royapettah, Chennai – 600014</li> 
+    </ul>
+    
+    </div>
+    <div class="col3">
+        <p class="sub-txt-md black">Pages</p>
+        <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Pricing</li>
+            <li>Management</li>
+        </ul>
+    </div>
+    <div class="col3">
+                <p class="sub-txt-md black">Resources</p>
+        <ul>
+            <li>Services</li>
+            <li>FAQ's</li>
+            <li>Press kits</li>
+            <li>Careers</li>
+        </ul></div>
+    <div class="col3"> <p class="sub-txt-md balck">Legal</p>
+        <ul>
+            <li>Privacy policy</li>
+            <li>Terms and Conditions</li>
+            <li>Policy</li>
+        </ul></div>
+   
 </div>
 </div>
 </body>
