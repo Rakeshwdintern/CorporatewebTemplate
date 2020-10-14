@@ -86,7 +86,7 @@ background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .sub-txt-md{
-    margin :3%;
+    margin :1% 3%;
     padding: 0 20%;
     color: white;
     font-size: 20px;
@@ -131,8 +131,8 @@ background-size: cover;
     color: darkslategrey;
     text-align: center;
     margin-top:2%;
-    font-size: 35px;
-    font-family: 'Hind Siliguri' monospace ;
+    font-size: 30px;
+    font-family: 'Hind Siliguri';
     font-weight: 600;
     margin-bottom: 0;
     
@@ -175,17 +175,30 @@ background-size: cover;
 .bigcols2{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 45% 45%;
-    padding: 4% 10%;
-    grid-gap: 10%;
+    grid-template-columns: 45% 50%;
+    padding: 4% 4%;
+    grid-gap: 5%
 }
 .content-text{font-weight: 400;
     font-style: normal;
-    /* font-size: 17px; */
+    font-size: 17px;
     text-transform: none;
     letter-spacing: 0;
     line-height: 30px;
-    color: rgba(132,137,145,1);}
+    color: rgba(132,137,145,1);
+    font-family: 'Hind Siliguri';
+    }
+.headline-sm{color: rgba(49,50,51,1);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 600;
+line-height: 1.2;
+
+    }
+.sub-txt-sm{
+    color: rgba(49,50,51,0.5);
+    font-family: 'Hind Siliguri';
+    padding-right: 5%;
+}
 .bigcols2-review{
     margin-top: 50px;
     display: grid;
@@ -194,33 +207,42 @@ background-size: cover;
     grid-gap: 4%;
 }
 .sub-cols{
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 5%;
 }
 .ellipse-btn-sm-blue{
     border-radius: 30px;
-    padding: 1.9% 10%;
-    background-color: #3258d4;
-    color: white;
+    padding: 2% 10%;
+    /* background-color: #3258d4; */
+    /* color: white; */
     border: none;
     box-shadow: 0 0 #3258d4;
-    margin: 5% 1%;
-    font-family: 'Hind Siliguri';
+    /* margin: 0 1%; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: small;
-    font-weight: 500;
+    font-weight: 600;
+    background-color: rgba(34,147,215,1);
+    color: #ffffff;
 }
+
 .col-1-headline-md{
     font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-    font-size: 34px;
+    font-size: 30px;
     text-transform: none;
     letter-spacing: -0.003em;
     line-height: 46px;
-    color: rgba(49,50,51,1);
+    color: rgba(49,50,51,0.7);
 }
+.sub-col-icons{
+    color: #3d4fff;
+    size: large;
+    font-size: xx-large
 }
+
 .info-sec-3{
     background-color: #3258d4;
 }
@@ -229,8 +251,9 @@ background-size: cover;
 }
 .tworow-threecols
 {padding: 5% 2%;
-    background-image: url('clouds.jpg');
+    background-image: url(dc.jpg),linear-gradient(rgba(12, 67, 245, 0.2),rgba(20, 23, 219, 0.342));
     margin-top: 50px;
+    background-blend-mode: overlay;
 }
 .large{
     font-size: xx-large;
@@ -243,8 +266,15 @@ background-size: cover;
     
 }
 .txt-icon{
-    display: grid;
-    grid-template-columns: 20% auto;
+    display: flex;
+    justify-content:left;
+    align-items: stretch;
+}
+.txt-icon-icons{
+    
+color: rgba(34,147,215,0.8);
+    font-size: xx-large;
+    padding: 0 5%;
 }
 .bg-white{
     background: white;;
@@ -320,26 +350,52 @@ ul{
     list-style-type: none;
 }
 .column{
-    padding: 0 5%;
+    padding: 5%;
     display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .text-sec{
     margin: 5%
 }
 .col-head{
     margin: 0;
+    padding: 0 5%;
+    font-weight: 600;
 }
 .btm-brdr-grey{
     border-bottom-color: grey;
-    border-bottom-style: solid;
+    /* border-bottom: 1px; */
+    border: 1px solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
 }
 .five-cols{
     display: grid;
     max-width: 100%;
-    margin: 5%;
-    grid-template-columns: repeat(5,1fr);
+    margin: 2% 5%;
+    /* grid-template-columns: repeat(5,1fr); */
+    grid-template-columns: 30% 20% auto auto auto;
+    grid-gap: 5%;
+}
+.five-cols ul{
+    margin: 0;
+    padding: 0;
+}
+.pdd-0{
+    padding: 0;
+}
+.lin-space{
+    line-height: 1.7;
+}
+.f-xxl {
+    font-size: x-large;
+}
+.lg-icons{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 </style>
 </head>
@@ -348,10 +404,10 @@ ul{
     <div class = "header">
  <div class="pre-header">
      <div class="pre-header-col-1">
-        <div class="phnum-small"><i class ="fas fa-phone sm-phone-icon"></i><span><a class="phnum-txt-sm" href="#">
+        <div class="phnum-small"><i class ="fas  fa-phone sm-phone-icon"></i><span><a class="phnum-txt-sm" href="#">
             123-456-7890
         </a></span> </div>
-        <div class="email-small"><i class="fas fa-envelope sm-phone-icon"></i>
+        <div class="email-small"><i class="fas  fa-envelope sm-phone-icon"></i>
         <a class="phnum-txt-sm" href ="#">support@exponentthemes.com</a></div>
      </div>
      <div class="pre-header-col-2">
@@ -371,19 +427,19 @@ ul{
         <p class="text-sm-darkgrey">Some of the reasons include precise construction and critical handiling of any type of large data</p>
 <div class="info-sec-1-1">
 <div class="info-card-grids">
-<div class="info-sec-1-card-img"><i class="fas fa-globe"></i></div>
+<div class="info-sec-1-card-img"><i class="fas  fa-globe"></i></div>
 <div class="info-sec-1-card-text">
     <span class="heading-xs black">Global Communication</span>
     <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p>
 </div>
 
 
-    <div class="info-sec-1-card-img"><i class="fas fa-clock"></i></div>
+    <div class="info-sec-1-card-img"><i class="fas  fa-clock"></i></div>
 <div class="info-sec-1-card-text"><span class="heading-xs black">Global Communication</span>
     <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p></div>
 
 
-    <div class="info-sec-1-card-img"><i class="fas fa-key"></i></div>
+    <div class="info-sec-1-card-img"><i class="fas  fa-key"></i></div>
 <div class="info-sec-1-card-text"><span class="heading-xs black">Global Communication</span>
     <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p></div>
 
@@ -398,11 +454,11 @@ ul{
  This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. </p>
  <div class="sub-cols">
      <div class="sub-col-1">
-         <i class="fab fa-ubuntu"></i>
+         <i class="fab fa-ubuntu sub-col-icons"></i>
          <h3 class="headline-sm">Cutting Edge</h3>
          <p class="sub-txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p>
      </div>
-     <div class="sub-col-2"> <i class="fab fa-ubuntu"></i>
+     <div class="sub-col-2"> <i class="fab fa-ubuntu sub-col-icons"></i>
         <h3 class="headline-sm">Futuristic</h3>
         <p class="sub-txt-sm">Over 30 professionally designed pre-built website concepts to choose from.</p></div>
  </div>
@@ -412,18 +468,46 @@ ul{
     <img src="drone.jpg" alt="" width="100%" height="100%">
 </div>
 </div>
+
 <div class="tworow-threecols">
-    
+     
     <center>
-        <h2 class="headline-md white">How our AI  work on your applications</h2>
-        <p class="sub-txt-md white">The best part of being a part of this community is about working together.</p>
+        <h2 class="headline-md white">How our A.I.  works on your applications</h2>
+        <p class="sub-txt-md  white">The best part of being a part of this community is about working together.</p>
         <div class="cels3">
-            <div class="cel"><i class="fas fa-globe white large"></i></div>
-            <div class="cel"><i class="fas fa-clock white large"></i></div>
-            <div class="cel"><i class="fas fa-key white large"></i></div>
-            <div class="cel"><span><h4 class="sub-txt-md">Unlimited Storage</h4><p class="sub-txt-md">Get started swiftly & easily by importing a demo of your choice in a single click.</p></span></div>
-            <div class="cel"><span><h4 class="sub-txt-md">Cloud Processing</h4><p class="sub-txt-md">Over 30 high quality professionally designed pre-built website concepts to choose from.</p></span></div>
-            <div class="cel"><span><h4 class="sub-txt-md">Artificial Intelligence</h4><p class="sub-txt-md">Build your website using a fully visual interface, using our revolutionary page & header builder.</p></span></div>
+            <!-- <div class="cel"><i class="fas  fa-globe white large"></i></div> -->
+            
+                
+            <!-- <div class="cel"><i class="fas  fa-clock white large"></i></div> -->
+            
+                
+            <div class="cel">
+                <div style="font-size: xx-small;"><svg  version="1.1" id="Layer_1" ;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M5,41L11,1L53,1L59,41" style="stroke-dasharray: 123, 125; stroke-dashoffset: 0;"></path>
+                    <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" width="54" height="22" d="M5 41 L59 41 L59 63 L5 63 Z" style="stroke-dasharray: 152, 154; stroke-dashoffset: 0;"></path>
+                    <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M45,52A3,3 0,1,1 51,52A3,3 0,1,1 45,52" style="stroke-dasharray: 19, 21; stroke-dashoffset: 0;"></path>
+                    <path fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M23.998,20L
+                        31.998,12L39.998,20" style="stroke-dasharray: 23, 25; stroke-dashoffset: 0;"></path>
+                    <g>
+                    <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M31.998,12L31.998,32" style="stroke-dasharray: 20, 22; stroke-dashoffset: 0;"></path>
+                    </g>
+                    </svg></div>
+                <span><h4 class="sub-txt-md">Unlimited Storage</h4><p class="sub-txt-md pdd-0">Get started swiftly & easily by importing a demo of your choice in a single click.</p></span></div>
+            <div class="cel"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M63,18L63,54L1,54L1,10L22,10L30,18Z" style="stroke-dasharray: 208, 210; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M34.887,42H39c1.887,0,3-1,3-3c0-1-1-3-3-3
+                    c0-3.604-3.277-6-7-6c-3.295,0-6.413,2.978-7,6l0,0c-2,0-3,2-3,3c0,2,1,3,3,3h10.434" style="stroke-dasharray: 54, 56; stroke-dashoffset: 0;"></path>
+                </svg><span><h4 class="sub-txt-md ">Cloud Processing</h4><p class="sub-txt-md pdd-0">Over 30 high quality professionally designed pre-built website concepts to choose from.</p></span></div>
+            <div class="cel"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M21,40v5h22l0.001-5.107C49,36.195,53,29.564,53,22
+                    c0-11.598-9.402-21-21-21s-21,9.402-21,21C11,29.565,14.998,36.304,21,40z" style="stroke-dasharray: 142, 144; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M28,45L25,25" style="stroke-dasharray: 21, 23; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M36,45L39,25" style="stroke-dasharray: 21, 23; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M25,26L29,29L32,26L35,29L39,26" style="stroke-dasharray: 19, 21; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" width="22" height="6" d="M21 45 L43 45 L43 51 L21 51 Z" style="stroke-dasharray: 56, 58; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" width="18" height="6" d="M23 51 L41 51 L41 57 L23 57 Z" style="stroke-dasharray: 48, 50; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" width="14" height="6" d="M25 57 L39 57 L39 63 L25 63 Z" style="stroke-dasharray: 40, 42; stroke-dashoffset: 0;"></path>
+                </svg><span><h4 class="sub-txt-md pdd-0">Artificial Intelligence</h4><p class="sub-txt-md pdd-0">Build your website using a fully visual interface, using our revolutionary page & header builder.</p></span></div>
 
         </div>
 
@@ -432,14 +516,14 @@ ul{
 </div>
 <div class="bigcols2">
     <div class="col1"><img src="analytics.JPG" alt="" srcset=""></div>
-    <div class="col2"><p class="txt-sm"><i class="fas fa-minus "></i> AI AND MACHINE LEARNING </p>
-    <h2 class="col-1-headline-md">The next big thing in technology is here</h2>
-    <div class="sub-cols"><div class="txt-icon"><i class="fas fa-key"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
-    <div class="txt-icon"><i class="fas fa-globe"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
-    <div class="txt-icon"><i class="fas fa-database"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
-    <div class="txt-icon"><i class="fas fa-wave-square"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
-    <div class="txt-icon"><i class="fas fa-video"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
-    <div class="txt-icon"><i class="fas fa-truck"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="col2"><p class="txt-sm"><i class="fas  fa-minus "></i> AI AND MACHINE LEARNING </p>
+    <h2 class="col-1-headline-md black">The next big thing in technology is here</h2>
+    <div class="sub-cols"><div class="txt-icon"><i class="fas  fa-key txt-icon-icons"></i><span><p class="subtxt-md mrg-0">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas  fa-globe txt-icon-icons"></i><span><p class="subtxt-md black mrg-0">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas  fa-database txt-icon-icons"></i><span><p class="subtxt-md black mrg-0">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas  fa-wave-square txt-icon-icons"></i><span><p class="subtxt-md black mrg-0">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas  fa-video txt-icon-icons"></i><span><p class="subtxt-md black mrg-0">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas  fa-truck txt-icon-icons"></i><span><p class="subtxt-md black mrg-0">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
 
 </div>
 
@@ -480,7 +564,7 @@ ul{
 </div>
 <div class="bigcols2-review">
     <div class="reviewcard">
-        <div class="reviewtext"><i class="fas"></i><p class="reviewtextsm">She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.
+        <div class="reviewtext"><i class="fas "></i><p class="reviewtextsm">She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.
 
         </p>
     <p class="name">Katharine Teresa</p>
@@ -490,7 +574,7 @@ ul{
         <img src="kath.JPG" alt="">
     </div>
     <div class="reviewcard">
-        <div class="reviewtext"><i class="fas"></i><p class="reviewtextsm">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, devious Semikoli, but the Little Blind Text didn’t listen.
+        <div class="reviewtext"><i class="fas "></i><p class="reviewtextsm">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, devious Semikoli, but the Little Blind Text didn’t listen.
 
         </p>
     <p class="name">Bruce Wayne</p>
@@ -539,46 +623,46 @@ ul{
     
     </div>
     <div class="row">
-        <div class="column bg-custom"><i class="far fa-comment"></i> <div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
-        <div class="column bg-custom"><i class="fas fa-thumbs-up"></i><div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
-        <div class="column bg-custom"><i class="fas fa-microphone"></i> <div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
+        <div class="column bg-custom"><i class="far fa-comment f-xxl lg-icons" ></i> <div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
+        <div class="column bg-custom"><i class="fas fa-thumbs-up f-xxl lg-icons"></i><div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
+        <div class="column bg-custom"><i class="fas fa-microphone f-xxl lg-icons"></i> <div class="text-sec"><p class="col-head">General Enquires</p>  <p class="text-sec gray">Bots will solve any common questions you may have</p></div></div>
     
     </div>
 </div>
 <div class="five-cols footer">
-    <div class="col1"><h2 class="col-1-headline-md black">Exponent</h2>
-    <p class="sub-txt-md grey"> Get started swiftly & easily by importing a demo
+    <div class="col1"><h2 class="col-1-headline-md black mrg-0">Exponent</h2>
+    <p class="sub-txt-md grey pdd-0 mrg-0"> Get started swiftly & easily by importing a demo
          of your choice in a single click. Build your website using a fully visual interface.</p></div>
-    <div class="col2"><p class="sub-txt-md">Contact</p>
+    <div class="col2"><p class="sub-txt-md black pdd-0 mrg-0">Contact</p>
     <ul>
-       <li>+1800-123-4567</li>
-       <li>help@brandexponents.com</li>
-       <li>Express Chambers II Spaces Works, Level 5, Royapettah, Chennai – 600014</li> 
+       <li class="lin-space grey" >+1800-123-4567</li class="lin-space grey" >
+       <li class="lin-space grey" >help@brandexponents.com</li class="lin-space grey" >
+       <li class="lin-space grey" >Express Chambers II Spaces Works, Level 5, Royapettah, Chennai – 600014</li class="lin-space grey" > 
     </ul>
     
     </div>
     <div class="col3">
-        <p class="sub-txt-md grey">Pages</p>
-        <ul>
-            <li>About</li>
-            <li>Team</li>
-            <li>Pricing</li>
-            <li>Management</li>
+        <p class="sub-txt-md black pdd-0 mrg-0">Pages</p>
+        <ul class="">
+            <li class="lin-space grey" >About</li class="lin-space grey" >
+            <li class="lin-space grey" >Team</li class="lin-space grey" >
+            <li class="lin-space grey" >Pricing</li class="lin-space grey" >
+            <li class="lin-space grey" >Management</li class="lin-space grey" >
         </ul>
     </div>
     <div class="col3">
-                <p class="sub-txt-md grey">Resources</p>
+                <p class="sub-txt-md black pdd-0 mrg-0">Resources</p>
         <ul>
-            <li>Services</li>
-            <li>FAQ's</li>
-            <li>Press kits</li>
-            <li>Careers</li>
+            <li class="lin-space grey" >Services</li class="lin-space grey" >
+            <li class="lin-space grey" >FAQ's</li class="lin-space grey" >
+            <li class="lin-space grey" >Press kits</li class="lin-space grey" >
+            <li class="lin-space grey" >Careers</li class="lin-space grey" >
         </ul></div>
-    <div class="col3"> <p class="sub-txt-md grey">Legal</p>
+    <div class="col3"> <p class="sub-txt-md black pdd-0 mrg-0">Legal</p>
         <ul>
-            <li>Privacy policy</li>
-            <li>Terms and Conditions</li>
-            <li>Policy</li>
+            <li class="lin-space grey" >Privacy policy</li class="lin-space grey" >
+            <li class="lin-space grey" >Terms and Conditions</li class="lin-space grey" >
+            <li class="lin-space grey" >Policy</li class="lin-space grey" >
         </ul></div>
    
 </div>

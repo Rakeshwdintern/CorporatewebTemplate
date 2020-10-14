@@ -68,7 +68,8 @@
     margin: 0;
     padding: 5% 0;
 width: 100%;
-background-color:#3d5afe;
+/* background-color:#3d5afe; */
+background-image: url("clouds.jpg");
 text-align: center;
 
 }
@@ -81,16 +82,17 @@ text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .sub-txt-md{
-    margin :15px 20%;
+    margin :3%;
     color: white;
     font-size: 20px;
     line-height: 32px;
     font-family: 'Hind Siliguri';
+    font-weight: 500;
 }
 .ellipse-btn-md{
     margin: 1% 0;
     border-radius: 50px;
-    box-shadow: 0px -2px 1px 3px #3258d4;
+    box-shadow:0px -2px 4px 0px #03070e54;
     border :none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.8% 3%;
@@ -121,7 +123,7 @@ text-align: center;
     text-align: center;
     margin: 2% 0;
     font-size: 40px;
-    font-family: "Hind"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Hind Siliguri';
     font-weight: 500;
 }
 .text-sm-darkgrey{
@@ -149,12 +151,19 @@ text-align: center;
     border-radius: 100px;
     height: fit-content;
 }
-.info-sec-2-two-col{
+.bigcols2{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 45% 45%;
     padding: 4%;
     grid-gap: 10%;
+}
+.bigcols2-review{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 4%;
+    grid-gap: 4%;
 }
 .sub-cols{
     display: grid;
@@ -187,6 +196,64 @@ text-align: center;
 .white{
     color: white;
 }
+.tworow-threecols
+{padding: 5% 2%;
+    background-image: url('clouds.jpg');
+    margin-top: 50px;
+}
+.large{
+    font-size: xx-large;
+}
+.cels3{display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 960px;
+    margin: 5% auto;
+    grid-gap: 2%;
+    
+}
+.txt-icon{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+.bg-white{
+    background: white;;
+}
+.black{
+    color: black;
+}
+.price-card{
+    box-shadow: 0px 1px 5px 3px #0000001f;
+    border-radius: 5px;
+    background: white;
+    padding: 10% 0;
+    
+}
+.bg-custom{
+    background:rgba(241,241,241);
+}
+.txt-xs{
+    font-size: small;
+}
+.dodgerblue{
+    color: #3d5afe;
+}
+.effects{
+    background-image: url(https://exponentwptheme.b-cdn.net/corporate/wp-content/uploads/sites/2/2018/07/price-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.reviewcard{
+    DISPLAY: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 1px 1px 2px 2px #00000029;
+     padding-left:3%; 
+}
+.reviewtext{
+    line-height: 1.6;
+}
+
 </style>
 </head>
 <body>
@@ -237,7 +304,7 @@ text-align: center;
 </div>
 </div>
 </div>
-<div class="info-sec-2-two-col">
+<div class="bigcols2">
 <div class="col1"> 
     <h2 class="col-1-headline-md">Scale your business using our technology</h2>
     <p class="">Exponent WordPress theme is insanely flexible and amazingly easy to use.
@@ -258,9 +325,94 @@ text-align: center;
     <img src="drone.jpg" alt="" width="100%">
 </div>
 </div>
-<!-- <div class="info-sec-3">
-    <h2 class="headline-md white">How our A.I works on your applications</h2>
-</div> -->
+<div class="tworow-threecols">
+    <center>
+        <h2 class="headline-md white">How our AI  work on your applications</h2>
+        <p class="sub-txt-md white">The best part of being a part of this community is about working together.</p>
+        <div class="cels3">
+            <div class="cel"><i class="fas fa-globe white large"></i></div>
+            <div class="cel"><i class="fas fa-clock white large"></i></div>
+            <div class="cel"><i class="fas fa-key white large"></i></div>
+            <div class="cel"><span><h4 class="sub-txt-md">Unlimited Storage</h4><p class="sub-txt-md">Get started swiftly & easily by importing a demo of your choice in a single click.</p></span></div>
+            <div class="cel"><span><h4 class="sub-txt-md">Cloud Processing</h4><p class="sub-txt-md">Over 30 high quality professionally designed pre-built website concepts to choose from.</p></span></div>
+            <div class="cel"><span><h4 class="sub-txt-md">Artificial Intelligence</h4><p class="sub-txt-md">Build your website using a fully visual interface, using our revolutionary page & header builder.</p></span></div>
+
+        </div>
+
+    </center>
+</div>
+<div class="bigcols2">
+    <div class="col1"><img src="analytics.JPG" alt="" srcset=""></div>
+    <div class="col2"><p class="txt-sm"><i class="fas fa-minus "></i> AI AND MACHINE LEARNING </p>
+    <h2 class="col-1-headline-md">The next big thing in technology is here</h2>
+    <div class="sub-cols"><div class="txt-icon"><i class="fas fa-key"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas fa-globe"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas fa-database"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas fa-wave-square"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas fa-video"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+    <div class="txt-icon"><i class="fas fa-truck"></i><span><p class="subtxt-md">Banking & Finance</p><p class="txt-sm">Secure Transactions</p></span></div>
+
+</div>
+
+    
+    
+    </div>
+
+</div>
+<div class="tworow-threecols bg-custom">
+    <center>
+        <h2 class="headline-md black">Pricing that fits you</h2>
+        <p class="sub-txt-md black">Paid annually and Auto renewal option is available in the checkout process</p>
+        <div class="cels3">
+            <div class="price-card">
+            <center><p class="card-text dodgerblue">Free Trial</p>
+                <h1><span class="txt-xs">$</span>
+                    0 <span class="txt-xs"> /month</span></h1>
+            <p class="lighttext-sm">Trial for 14 days</p>
+            <button class="ellipse-btn-sm-blue">TRY NOW</button>
+            
+        </center>
+            </div>
+            <div class="price-card effects">
+                <center><p class="card-text dodgerblue">Premium</p>
+                <h1><span class="txt-xs">$</span>
+                    99 <span class="txt-xs"> /month</span></h1>
+                <p class="lighttext-sm">Upto 10 Users</p>
+                <button class="ellipse-btn-sm-blue">Sign up now</button>
+            </center> </div>
+            <div class="price-card"><center><p class="card-text dodgerblue">Business</p><h1><span class="txt-xs">$</span>
+                129 <span class="txt-xs"> /month</span></h1>
+                <p class="lighttext-sm">upto 50 Users</p>
+                <button class="ellipse-btn-sm-blue">SIGN UP</button>
+            </center></div>
+
+        </div>
+    </center>
+</div>
+<div class="bigcols2-review">
+    <div class="reviewcard">
+        <div class="reviewtext"><i class="fas"></i><p class="reviewtextsm">She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.
+
+        </p>
+    <p class="name">Katharine Teresa</p>
+    <p class="txt-xs">TESS ELECTRONICS</p>
+    
+    </div>
+        <img src="kath.JPG" alt="">
+    </div>
+    <div class="reviewcard">
+        <div class="reviewtext"><i class="fas"></i><p class="reviewtextsm">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, devious Semikoli, but the Little Blind Text didn’t listen.
+
+        </p>
+    <p class="name">Bruce Wayne</p>
+    <p class="txt-xs">TESS ELECTRONICS</p>
+    
+    </div>
+        <img src="bruce.JPG" alt="">
+
+    </div>
+
+</div>
 </div>
 </body>
 </html>
