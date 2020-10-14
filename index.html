@@ -72,8 +72,9 @@
     padding: 5% 0;
 width: 100%;
 /* background-color:#3d5afe; */
-background-image: url("clouds.jpg");
+background-image: url(hero.jpg);
 text-align: center;
+background-size: cover;
 
 }
 .headline-l{
@@ -86,6 +87,7 @@ text-align: center;
 }
 .sub-txt-md{
     margin :3%;
+    padding: 0 20%;
     color: white;
     font-size: 20px;
     line-height: 32px;
@@ -116,6 +118,7 @@ text-align: center;
 }
 .ellipse-btn-md a{
     text-decoration: none;
+    color: #3d5ffa;
 }
 
 .info-sec-1{
@@ -127,17 +130,27 @@ text-align: center;
 .headline-md{
     color: darkslategrey;
     text-align: center;
-    margin: 2% 0;
-    font-size: 40px;
-    font-family: 'Hind Siliguri';
-    font-weight: 500;
+    margin-top:2%;
+    font-size: 35px;
+    font-family: 'Hind Siliguri' monospace ;
+    font-weight: 600;
+    margin-bottom: 0;
+    
 }
 .text-sm-darkgrey{
     color: darkgrey;
     font-size: large;
     text-align: center;
-    margin: 1% 20%;
+    margin: 0 20%;
+    padding: 0 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 
+}
+.heading-xs{
+    font-weight: 600;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .info-card-grids{
     padding: 2% 5%;
@@ -151,19 +164,28 @@ text-align: center;
     color: grey;
 }
 .info-sec-1-card-img{
-    padding: 1%;
+    padding: 0.5% 1%;
     margin-right: 2%;
     background-color: #3d5afe;
     border-radius: 100px;
     height: fit-content;
+    color: white;
+    font-size: x-large;
 }
 .bigcols2{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 45% 45%;
-    padding: 4%;
+    padding: 4% 10%;
     grid-gap: 10%;
 }
+.content-text{font-weight: 400;
+    font-style: normal;
+    /* font-size: 17px; */
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 30px;
+    color: rgba(132,137,145,1);}
 .bigcols2-review{
     margin-top: 50px;
     display: grid;
@@ -189,12 +211,15 @@ text-align: center;
     font-weight: 500;
 }
 .col-1-headline-md{
-    color: darkslategrey;
-    text-align: left;
-    margin: 2% 0;
-    font-size: 40px;
-    font-family: "Hind"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 34px;
+    text-transform: none;
+    letter-spacing: -0.003em;
+    line-height: 46px;
+    color: rgba(49,50,51,1);
+}
 }
 .info-sec-3{
     background-color: #3258d4;
@@ -290,6 +315,10 @@ text-align: center;
     
 
 }
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
 .column{
     padding: 0 5%;
     display: flex;
@@ -300,7 +329,7 @@ text-align: center;
     margin: 5%
 }
 .col-head{
-    margin: 0 5%;
+    margin: 0;
 }
 .btm-brdr-grey{
     border-bottom-color: grey;
@@ -309,7 +338,7 @@ text-align: center;
 .five-cols{
     display: grid;
     max-width: 100%;
-    margin: 0 5%;
+    margin: 5%;
     grid-template-columns: repeat(5,1fr);
 }
 </style>
@@ -344,18 +373,18 @@ text-align: center;
 <div class="info-card-grids">
 <div class="info-sec-1-card-img"><i class="fas fa-globe"></i></div>
 <div class="info-sec-1-card-text">
-    <span class="heading-xs">Global Communication</span>
+    <span class="heading-xs black">Global Communication</span>
     <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p>
 </div>
 
 
     <div class="info-sec-1-card-img"><i class="fas fa-clock"></i></div>
-<div class="info-sec-1-card-text"><span class="heading-xs">Global Communication</span>
+<div class="info-sec-1-card-text"><span class="heading-xs black">Global Communication</span>
     <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p></div>
 
 
     <div class="info-sec-1-card-img"><i class="fas fa-key"></i></div>
-<div class="info-sec-1-card-text"><span class="heading-xs">Global Communication</span>
+<div class="info-sec-1-card-text"><span class="heading-xs black">Global Communication</span>
     <p class="txt-sm">Get started swiftly & easily by importing a demo of your choice in a single click.</p></div>
 
 
@@ -365,7 +394,7 @@ text-align: center;
 <div class="bigcols2">
 <div class="col1"> 
     <h2 class="col-1-headline-md">Scale your business using our technology</h2>
-    <p class="">Exponent WordPress theme is insanely flexible and amazingly easy to use.
+    <p class="content-text">Exponent WordPress theme is insanely flexible and amazingly easy to use.
  This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. </p>
  <div class="sub-cols">
      <div class="sub-col-1">
@@ -380,7 +409,7 @@ text-align: center;
  <button class="ellipse-btn-sm-blue">ABOUT US</button>
 </div>
 <div class="col2">
-    <img src="drone.jpg" alt="" width="100%">
+    <img src="drone.jpg" alt="" width="100%" height="100%">
 </div>
 </div>
 <div class="tworow-threecols">
@@ -518,7 +547,7 @@ text-align: center;
 </div>
 <div class="five-cols footer">
     <div class="col1"><h2 class="col-1-headline-md black">Exponent</h2>
-    <p class="sub-txt-md gray"> Get started swiftly & easily by importing a demo
+    <p class="sub-txt-md grey"> Get started swiftly & easily by importing a demo
          of your choice in a single click. Build your website using a fully visual interface.</p></div>
     <div class="col2"><p class="sub-txt-md">Contact</p>
     <ul>
@@ -529,7 +558,7 @@ text-align: center;
     
     </div>
     <div class="col3">
-        <p class="sub-txt-md black">Pages</p>
+        <p class="sub-txt-md grey">Pages</p>
         <ul>
             <li>About</li>
             <li>Team</li>
@@ -538,14 +567,14 @@ text-align: center;
         </ul>
     </div>
     <div class="col3">
-                <p class="sub-txt-md black">Resources</p>
+                <p class="sub-txt-md grey">Resources</p>
         <ul>
             <li>Services</li>
             <li>FAQ's</li>
             <li>Press kits</li>
             <li>Careers</li>
         </ul></div>
-    <div class="col3"> <p class="sub-txt-md balck">Legal</p>
+    <div class="col3"> <p class="sub-txt-md grey">Legal</p>
         <ul>
             <li>Privacy policy</li>
             <li>Terms and Conditions</li>
