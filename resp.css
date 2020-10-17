@@ -1,89 +1,4 @@
-@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
-    .main-container{
-        width: 100vh;
-    }
-
-.headline-l{
-    margin: 25% 7% 5% 7%;
-    font-size: 3.5rem;
-}
-    .headline-md{
-       font-size: 2.5rem;
-   }
-   .txt-sm{
-       margin: 2% 10% 4% 0;
-    font-size: large;}
-    
-    .card-ele{
-    margin: 5% 2%;
-    }
-    .text-sm-darkgrey {
-        margin: 2%;
-        text-align: center;
-    }
-   
-   .sub-txt-md , .content-text, .footer p{
-       text-align: left;
-       letter-spacing: 1px;
-       font-size: 1.5rem;
-       padding : 2% 0;
-   }
-   .col1{
-       margin: 5%;
-   }
-    .col-1-headline-md ,.headline-md , .txt-icon {
-       letter-spacing: 2px;
-       font-size: 2rem;
-       margin:  2% 0 ;
-       
-   }
-   .col-1-headline-md{
-    text-align: left;
-   }
-   .ellipse-btn-md , .sub-col-1, .sub-col-2, .ellipse-btn-sm-blue {
-       font-size: 1.5rem;
-       padding: 0.8rem 3rem;
-   }
- .sub-col-1 i , .sub-col-2 i{
-     font-size: 4rem;
- }
-   .ellipse-btn-sm-blue{
-       margin: 5% 25%;
-   }
-
-   .cel h4, .cel p{
-       text-align: center;
-   }
-.col2{
-    padding: 5%;
-}
-
-
-
-    }
-
-@media only screen and (min-device-width: 480px) and (max-device-width: 768px){
-
-}
-
-@media only screen and (min-width:1000px) and (max-width:1200px){
-    .sub-cols{
-        display: block;
-    }
-    .col2{ padding: 0 0 0 25%;}
-    .col2 img{
-        padding: 10% 0;
-    }
-}
-@media (max-width:1000px){
-    .medium-block{
-        display: block;
-    }
-    .col1 img{ width: 100%;
-    height: min-content;}
-}
-
-@media only screen and (min-width:280px) and (max-width:768px){
+@media (min-width:280px) and (max-width:768px){
     .cels3 , .info-card-grids, .bigcols2 , .sub-cols, .five-cols, .bigcols2-review, .row
     {
         display: block;
@@ -93,10 +8,13 @@
         height: min-content;
         max-width: 100%;
     }
+    .txt-sm{
+        font-size: 1rem;
+    }
     .headline-l{
         font-size: 3.5rem;
     }
-     .info-sec-1-card-text, .col-head,.footer h2 {
+      .col-head,.footer h2 {
         font-size: 2rem;
         
     }
@@ -116,8 +34,9 @@
     .column{
         margin: 2%;
     }
-    .txt-icon , .col2 h2 , .reviewtextsm, .price-card,.text-sec ,.col-head, .five-cols ul{
+    .txt-icon , .col2 h2 , .reviewtextsm, .price-card,.text-sec ,.col-head, .five-cols ul, .footer p,.info-sec-1-card-text{
         font-size: 1.5rem;
+        margin-bottom: 2%;
     }
     .price-card{
         margin: 10%;
@@ -134,4 +53,108 @@
     .bigcols2-review{
         padding: 0;
     }
+    .text-sm-darkgrey {
+        margin: 2%;
+        text-align: center;
+    }
+    .ellipse-btn-md , .sub-col-1, .sub-col-2, .ellipse-btn-sm-blue{
+        font-size: 1.5rem;
+        padding: 0.8rem 3rem;
+    }
+    .ellipse-btn-sm-blue{
+        margin: 5% 25%;
+    }
+    .col-1-headline-md ,.headline-md , .txt-icon {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        margin:  2% 0 ;
+        
+    }
 }
+
+
+
+
+
+
+@media all and (max-width : 480px) {
+    .main-container{
+        width: 100vh;
+    }
+
+.headline-l{
+    margin: 25% 7% 5% 7%;
+    font-size: 3.5rem;
+}
+    .headline-md{
+       font-size: 2.5rem;
+   }
+   .txt-sm{
+       margin: 2% 10% 4% 0;
+    font-size: large;}
+    
+    .card-ele{
+    margin: 5% 2%;
+    }
+    
+   
+   .sub-txt-md , .content-text {
+       text-align: left;
+       letter-spacing: 1px;
+       font-size: 1.5rem;
+       padding : 2% 0;
+   }
+   .col1{
+       margin: 5%;
+   }
+    
+   .col-1-headline-md{
+    text-align: left;
+   }
+   
+ .sub-col-1 i , .sub-col-2 i{
+     font-size: 4rem;
+ }
+  
+
+   .cel h4, .cel p{
+       text-align: center;
+   }
+.col2{
+    padding: 5%;
+}
+
+
+
+    }
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+
+}
+
+@media (min-width:1000px) and (max-width:1200px){
+    .sub-cols{
+        display: block;
+    }
+    .col2{ padding: 0 0 0 25%;}
+    .col2 img{
+        padding: 10% 0;
+    }
+}
+
+
+
+@media (max-width:1000px){
+    .medium-block{
+        display: block;
+    }
+    .col1 img{ width: 100%;
+    height: min-content;}
+}
+.sub-txt-md{
+    padding: 5%;
+}
+
+
+
+
