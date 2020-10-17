@@ -1,4 +1,12 @@
-@media (min-width:280px) and (max-width:768px){
+@media only screen and (min-width:280px) and (max-width:768px){
+   
+    .main-container{
+        margin: 0;
+        padding:0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
     .cels3 , .info-card-grids, .bigcols2 , .sub-cols, .five-cols, .bigcols2-review, .row
     {
         display: block;
@@ -12,10 +20,10 @@
         font-size: 1rem;
     }
     .headline-l{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
       .col-head,.footer h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         
     }
     .info-card-grids {
@@ -35,7 +43,7 @@
         margin: 2%;
     }
     .txt-icon , .col2 h2 , .reviewtextsm, .price-card,.text-sec ,.col-head, .five-cols ul, .footer p,.info-sec-1-card-text{
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 2%;
     }
     .price-card{
@@ -58,7 +66,7 @@
         text-align: center;
     }
     .ellipse-btn-md , .sub-col-1, .sub-col-2, .ellipse-btn-sm-blue{
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0.8rem 3rem;
     }
     .ellipse-btn-sm-blue{
@@ -66,7 +74,7 @@
     }
     .col-1-headline-md ,.headline-md , .txt-icon {
         letter-spacing: 2px;
-        font-size: 2rem;
+        font-size: 1rem;
         margin:  2% 0 ;
         
     }
@@ -77,17 +85,17 @@
 
 
 
-@media all and (max-width : 480px) {
+@media only screen and (max-width : 480px) {
     .main-container{
         width: 100vh;
     }
 
 .headline-l{
     margin: 25% 7% 5% 7%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
     .headline-md{
-       font-size: 2.5rem;
+       font-size: 1.5rem;
    }
    .txt-sm{
        margin: 2% 10% 4% 0;
@@ -96,12 +104,14 @@
     .card-ele{
     margin: 5% 2%;
     }
-    
+    .curve{
+        margin-top: -1rem;
+    }
    
    .sub-txt-md , .content-text {
        text-align: left;
        letter-spacing: 1px;
-       font-size: 1.5rem;
+       font-size: 1rem;
        padding : 2% 0;
    }
    .col1{
@@ -113,7 +123,7 @@
    }
    
  .sub-col-1 i , .sub-col-2 i{
-     font-size: 4rem;
+     font-size: 2rem;
  }
   
 
@@ -132,7 +142,7 @@
 
 }
 
-@media (min-width:1000px) and (max-width:1200px){
+@media only screen and (min-width:1000px) and (max-width:1200px){
     .sub-cols{
         display: block;
     }
@@ -144,15 +154,16 @@
 
 
 
-@media (max-width:1000px){
+@media only screen and (max-width:1000px){
     .medium-block{
         display: block;
     }
     .col1 img{ width: 100%;
     height: min-content;}
-}
+    
 .sub-txt-md{
     padding: 5%;
+}
 }
 
 
