@@ -303,18 +303,14 @@
 .card-ele{
         display: grid;
     grid-template-columns: 20% auto;
-    grid-gap: 5%;
+    grid-gap: 3%;
     margin: 5% auto;
     }
     .info-sec-1-card-img {
-    padding: 25% 0;
-    /* margin-right: 2%; */
-    background-color: #2293d7;
-    border-radius: 100px;
-    height: fit-content;
-    color: white;
+     width: 25%;
+    padding: 15% 20%;
     font-size: 150%;
-    text-align: center;
+    margin: 0 auto;
 }
 .info-sec-1-card-text p {
    
