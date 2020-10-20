@@ -182,13 +182,13 @@ padding-right:5%;
 color: grey;
 }
 .info-sec-1-card-img{
-padding: 2.5% 3%;
+padding: 4.5% 5.5%;
 margin-right: 2%;
 background-color: #3d5afe;
 border-radius: 100px;
 height: fit-content;
 color: white;
-font-size: 100%;
+font-size: 150%;
 }
 .bigcols2{
 margin-top: 50px;
@@ -465,9 +465,9 @@ font-weight: 600;
 }
 
 .txt-sm{
-    font-size: small;
+font-size: small;
 font-weight: 600;
-    color: #8490a2
+color: #a4aef1;
 }
 .card-ele{
 display: flex;
