@@ -64,7 +64,9 @@ margin: 0;
 padding: 5% 0;
 width: 100%;
 /* background-color:#3d5afe; */
-background-image: url(hero.jpg);
+background-image: url(hero.jpg), linear-gradient(rgba(34,147,215,0.8),rgba(34,147,215,0.5));
+
+background-blend-mode: overlay;
 text-align: center;
 background-size: cover;
 margin-bottom: 5%;
@@ -154,7 +156,7 @@ margin-bottom: 0;
 
 }
 .text-sm-darkgrey{
-color: darkgrey;
+color:#9a9ea5;
 font-size: large;
 text-align: center;
 margin: 0 20%;
@@ -171,7 +173,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 .info-card-grids{
 padding: 2% 5%;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 
 
 }
@@ -180,13 +182,13 @@ padding-right:5%;
 color: grey;
 }
 .info-sec-1-card-img{
-padding: 4.5% 5.5%;
+padding: 2.5% 3%;
 margin-right: 2%;
 background-color: #3d5afe;
 border-radius: 100px;
 height: fit-content;
 color: white;
-font-size: 150%;
+font-size: 100%;
 }
 .bigcols2{
 margin-top: 50px;
@@ -303,10 +305,13 @@ background: white;;
 color: black;
 }
 .price-card{
-box-shadow: 0px 1px 5px 3px #0000001f;
-border-radius: 5px;
+box-shadow: 0px 5px 5px 3px #0000001f;
+border-radius: 10px;
 background: white;
 padding: 10% 0;
+height: 100%;
+width: auto;
+
 
 }
 .bg-custom{
@@ -460,12 +465,24 @@ font-weight: 600;
 }
 
 .txt-sm{
-font-size: small;
+    font-size: small;
 font-weight: 600;
-color: #a4aef1;
+    color: #8490a2
 }
 .card-ele{
 display: flex;
 justify-content: space-between;
 max-width: 30%;
+}
+.vid-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.vid-container embed{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
