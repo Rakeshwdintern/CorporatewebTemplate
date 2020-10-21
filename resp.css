@@ -5,6 +5,7 @@
         padding:0;
         max-width: 100%;
         max-height: 100%;
+       overflow: hidden;
     }
     
     .cels3 , .info-card-grids, .bigcols2 , .sub-cols, .five-cols, .bigcols2-review, .row
@@ -26,12 +27,10 @@
         font-size: 1.5rem;
         
     }
-    
-    .bigcols2 {
-        margin-top: 50px;
-        padding: 4% 4%;
-        grid-gap: 5%;
+    .icon-wrap img{
+        width: 10%;
     }
+   
     .sub-cols, .reviewcard {
         margin-top: 5%;
     }
@@ -65,16 +64,16 @@
     }
     .ellipse-btn-md , .sub-col-1, .sub-col-2, .ellipse-btn-sm-blue{
         font-size: 0.8rem;
-        padding: 0.7rem 2rem;
+        /* padding: 0.7rem 2rem; */
         font-weight: 700;
+        margin: 3% 0;
     }
-    .ellipse-btn-sm-blue{
-        margin: 5% 25%;
-    }
-    .col-1-headline-md  , .txt-icon {
-        letter-spacing: 2px;
-        font-size: 1rem;
-        margin:  2% 0 ;
+    
+    .col-1-headline-md  {
+        
+        font-size: 2rem;
+        width: 100%;
+        
         
     }
     .vid-container{
@@ -98,9 +97,9 @@
 
 
 @media only screen and (max-width : 480px) {
-    .main-container{
-        width: 100vh;
-    }
+.main-container{
+    max-width: 100%;
+}    
 
 .headline-l{
     margin: 25% 10% 5% 10%;
@@ -176,6 +175,7 @@
     }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+    
     .headline-l {
         font-size: 2.2rem;
         margin: 25% 10% 5% 10%;
@@ -207,9 +207,13 @@
     color: white;
     font-size: 100%;
 }
+ .bigcols2 {
+        margin-top: 50px;
+        max-width:70%;
+    }
 }
 
-@media only screen and (min-width:1000px) and (max-width:1200px){
+/* @media only screen and (min-width:1000px) and (max-width:1200px){
     .sub-cols{
         display: block;
     }
@@ -223,11 +227,11 @@
     line-height: inherit;
 }
 
-}
+} */
 
 
 
-@media only screen and (min-width: 768px) and (max-width:1000px){
+@media only screen and (min-width: 768px) and (max-width:1023px){
     .medium-block{
         display: block;
     }

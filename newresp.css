@@ -1,0 +1,16 @@
+@media only screen and (min-width:1000px) and (max-width:1200px){
+    .info-sec-1 , .bigcols2, .third-sec-wrap , .bigcols2-review , .tworow-threecols-inner
+    .middle-align, .row, .five-cols
+    
+    {
+        max-width: 90%;
+        margin: inherit auto;
+    }
+    .medium-block{
+        display: block;
+    }
+    .medium-block img{
+        width: 100%;
+        height: fit-content;
+    }
+}
