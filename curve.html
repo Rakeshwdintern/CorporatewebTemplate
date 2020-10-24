@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Curve</title>
     <style>
         body {
@@ -22,17 +23,18 @@
         }
 
 
-        .vid-bg {
-            width: 50%;
-            position: relative;
+
+        .vid4 {
+            min-width: 70%;
+            max-width: 70%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 2;
         }
 
-        .vid {
-            min-width: 100%;
-            max-width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
+        #vid1 {
+            display: none;
         }
     </style>
 </head>
@@ -54,12 +56,19 @@
         </svg>
     </div>
 
-    <div class="vid-bg">
-        <video src="drone-flying.mp4" controls autoplay class="vid"></video>
 
 
 
-    </div>
+    <video id="vid1" src="drone-flying.mp4" controls autoplay class="vid4"></video>
+
+    <button class="round-btn" onclick="showVid();"> Play </button>
+    <script>
+        function showVid() {
+            document.getElementById('vid1').style.display = "block";
+
+        }
+    </script>
+
 
 
 

@@ -585,9 +585,33 @@ max-width: 30%;
     position: relative;
 }
 
-.vid-container embed{
+.vid-container video{
     position: absolute;
-    top: 0;
     height: 100%;
-    width: 100%;
+    width: inherit;
+    object-fit: cover;
+}
+.round-btn{
+    z-index: 1;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #2293d7;
+    padding: 2rem;
+    top: 40%;
+    left: 42%;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+.sep-line{
+    position: absolute;
+    stroke: #ffffff;
+    left: 22%;
+    bottom:35%
+}
+.sep-line2{
+    position: absolute;
+    stroke: #ffffff;
+    left: 57%;
+    bottom:35%
 }
