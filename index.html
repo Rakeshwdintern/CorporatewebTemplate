@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container" id="mc">
 
         <div class="banner">
             <div class="upper">
@@ -105,11 +105,31 @@
             </div>
             <div class="col2">
                 <div class="vid-container"> <video autoplay="autoplay" controls replay src="drone-flying.mp4"></video>
-                    <button class="round-btn"> <i class="fas fa-play"></i> </button>
+                    <button class="round-btn" id="rbtn" onclick="playVideo();"><a class="white" href=""> <i
+                                class="fas fa-play"></i></a>
+                    </button>
                 </div>
 
             </div>
         </div>
+        <div class="vidplay" id="vidplay">
+            <i id="close" class="fad fa-window-close"
+                style="width: 25px; background-color: white; padding: 2%;color: black; float: right;"></i>
+            <video src="vimeo.mp4" id="video" autoplay="autoplay" repeat="true" controls type="video/mp4"></video>
+        </div>
+        <script>
+            function playVideo() {
+                document.getElementById("vidplay").style.display = "block";
+                document.getElementById("vidplay").style.position = "fixed";
+                document.getElementById("rbtn").style.zIndex = "0";
+
+            }
+            document.getElementById("close").onclick = function () {
+                document.getElementById("vidplay").style.display = "none";
+                document.getElementById("video").pause();
+
+            }
+        </script>
 
         <div class="tworow-threecols ex-space">
             <div class="curve c-2"><svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
@@ -378,6 +398,13 @@
                         <p class="txt-xs lft-align">LIFESTYLE, TECH</p>
                         <p class="sub-txt-md pdd-0 mrg-0 lft-align"><a href="#">Four places to visit if you are a
                                 nature lover</a></p>
+                        <p class="txt-xs grey lft-align">01 AUG 2018</p>
+                    </div>
+                    <div class="newsfeed">
+                        <img class="news-images" src="nt.jpg" alt="" srcset="">
+                        <p class="txt-xs lft-align">NEWS, TECH</p>
+                        <p class="sub-txt-md pdd-0 mrg-0 lft-align"><a href="#">By 2030 Every Person on this planet
+                                will have a smartphone</a></p>
                         <p class="txt-xs grey lft-align">01 AUG 2018</p>
                     </div>
 

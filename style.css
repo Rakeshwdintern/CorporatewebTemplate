@@ -434,8 +434,16 @@ padding: 1rem;
 .grey{
 color: darkgray;
 }
+.slide-nfedd{
+    display: flex;
+    max-width: 1160px;
+    flex-wrap: nowrap;
+    overflow: auto
+}
+
 .news-images{
-width: 100%;
+  
+        width:380px;
 }
 .newsfeed a{
 text-decoration: none;
@@ -557,6 +565,7 @@ text-align: left;
 .grd-gap{
 grid-gap: 3%;
 max-width: 100%;
+overflow-x: hidden;
 }
 .blue{
 color: blue;
@@ -614,4 +623,21 @@ max-width: 30%;
     stroke: #ffffff;
     left: 57%;
     bottom:35%
+}
+.vidplay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    top:0;
+    left:0;
+}
+.vidplay video{
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 70%;
+    height: 100%;
+    max-width: 1160px;
+    
 }
