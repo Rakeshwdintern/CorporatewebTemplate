@@ -104,8 +104,8 @@
                 <button class="ellipse-btn-sm-blue">ABOUT US</button>
             </div>
             <div class="col2">
-                <div class="vid-container"> <video autoplay="autoplay" controls replay src="drone-flying.mp4"></video>
-                    <button class="round-btn" id="rbtn" onclick="playVideo();"><a class="white" href=""> <i
+                <div class="vid-container"> <video id="sm-vid" loop autoplay src="drone-flying.mp4"></video>
+                    <button class="round-btn" id="rbtn" onclick="playVideo();"><a class="white"> <i
                                 class="fas fa-play"></i></a>
                     </button>
                 </div>
@@ -115,9 +115,10 @@
         <div class="vidplay" id="vidplay">
             <i id="close" class="fad fa-window-close"
                 style="width: 25px; background-color: white; padding: 2%;color: black; float: right;"></i>
-            <video src="vimeo.mp4" id="video" autoplay="autoplay" repeat="true" controls type="video/mp4"></video>
+            <video src="vimeo.mp4" id="video" controls autoplay type="video/mp4"></video>
         </div>
         <script>
+
             function playVideo() {
                 document.getElementById("vidplay").style.display = "block";
                 document.getElementById("vidplay").style.position = "fixed";
@@ -411,6 +412,13 @@
 
 
                 </div>
+                <ul class="final-ul">
+                    <li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
+                    <li class="dot" aria-label="Page dot 2"></li>
+                    <li class="dot" aria-label="Page dot 3"></li>
+                    <li class="dot" aria-label="Page dot 4"></li>
+                </ul>
+
             </center>
         </div>
         <div class="onerow tpad-10">
