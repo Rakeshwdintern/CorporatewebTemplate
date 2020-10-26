@@ -672,6 +672,7 @@ max-width: 30%;
 .foo-icons{
     color:#3d5afe;
     margin: 0 2%;
+    align-self:center;
 }
 .sm-grd{
     display: grid;
