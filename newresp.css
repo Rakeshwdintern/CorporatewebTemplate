@@ -570,10 +570,10 @@ padding: 0 3% 0 0;
     width: 450px;
  
 }
-.vid-container embed{
+.vid-container video{
     position: relative;
     height: 100%;
-    width: 450px;
+    width: 430px;
 }
 
 .sep-line , .sep-line2{
