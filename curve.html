@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Curve</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <style>
         body {
             width: 100%;
@@ -40,14 +42,16 @@
 </head>
 
 <body>
-    <ol class="final-ul">
+    <ol class="final-ul demo">
         <li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
         <li class="dot" aria-label="Page dot 2"></li>
         <li class="dot" aria-label="Page dot 3"></li>
         <li class="dot" aria-label="Page dot 4"></li>
     </ol>
 
-
+    <script>
+        $("div.demo").scrollLeft(300);
+    </script>
 </body>
 
 </html>

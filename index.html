@@ -381,7 +381,7 @@
                     best
                     facilities and doctors to take care of you.</p>
 
-                <div class="cels3 mrg-0 grd-gap pdd-0 slide-nfedd">
+                <div class="cels3 mrg-0 grd-gap pdd-0 slide-nfedd" id="nfeed">
                     <div class="newsfeed">
                         <img class="news-images" src="nt.jpg" alt="" srcset="">
                         <p class="txt-xs lft-align">NEWS, TECH</p>
@@ -414,13 +414,22 @@
                 </div>
                 <ul class="final-ul">
                     <li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
-                    <li class="dot" aria-label="Page dot 2"></li>
-                    <li class="dot" aria-label="Page dot 3"></li>
-                    <li class="dot" aria-label="Page dot 4"></li>
+                    <li id="dot1" class="dot" aria-label="Page dot 2" onclick="scroll50();"> </li>
+                    <li id="dot2" class="dot" aria-label="Page dot 3" onclick="scroll100();"></li>
+                    <li id="dot3" class="dot" aria-label="Page dot 4" onclick="scroll100();"></li>
                 </ul>
 
             </center>
         </div>
+        <script>
+            function scroll50() {
+                document.getElementById("nfeed").scrollLeft = 50;
+                document.getElementById("dot1").style.backgroundColor = "#3d5FFA";
+            }
+            function scroll100() {
+                document.getElementById("nfeed").scrollLeft = 445;
+            }
+        </script>
         <div class="onerow tpad-10">
             <div class="upper middle-align"><span>
                     <p class="white mrg-0">INNOVATION STARTS HERE</p>
